@@ -31,12 +31,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (isValid) {
             feedbackDiv.textContent = "Registration successful!";
-            feedbackDiv.style.color = "#28a745";
-            feedbackDiv.style.backgroundColor = "#d4edda";
+            feedbackDiv.style.color = "#28a745";           // success green
+            feedbackDiv.style.backgroundColor = "#d4edda"; // light green bg
         } else {
             feedbackDiv.innerHTML = messages.join("<br>");
-            feedbackDiv.style.color = "#d8000c";
-            feedbackDiv.style.backgroundColor = "#ffbaba";
+            feedbackDiv.style.color = "#dc3545";           // error red as specified
+            feedbackDiv.style.backgroundColor = "#ffbaba"; // light red bg
         }
     });
 });
